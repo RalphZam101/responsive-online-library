@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d52215e960.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style-form.css">
+    <title>Checkout Form</title>
+</head>
+<body>
+
+    <div class="form-nav-container">
+        <div class="form-nav-container-logo">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Bookzada</span>
+        </div>
+        <div class="form-nav-container-checkout">
+            <span>Checkout Form</span>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="form-content">
+            <div class="form-content-details"> 
+                <span class="form-content-details-label">Customer's Details</span>
+                <br>
+                <span class="form-details-name">Name</span>
+                <br>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                <br>
+                <br>
+                <span class="form-details-address">Address</span>
+                <br>
+                    <input type="text" placeholder=" House no.">
+                    <input type="text" placeholder=" Street, Compound,">
+                    <br>
+                    <input type="text" placeholder=" Barangay">
+                    <input type="text" placeholder=" City">
+                    <input type="text" placeholder=" Province">           
+                <br>
+                <br>
+                <span class="form-details-contactnumber">Contact Number</span>
+                <br>
+                    <input type="number" placeholder=" ex. 09xxxxxxxxx" pattern="[0]{1}[9]{1}[0-9]{9}">
+                <br>
+                <br>
+                <span class="form-details-payment">Payment Method</span>
+                <br>
+                <p class="form-details-payment-option">
+                    <input type="radio" name="payment" id="cod" value="cod" required>
+                    <label for="cod">Cash on Delivery</label>
+                    <br>
+
+                    <input type="radio" name="payment" id="creditCard" value="creditCard" required>
+                    <label for="creditCard">Credit Card</label>
+                    <br>
+            
+                    <input type="radio" name="payment" id="bookzadaPay" value="bookzadaPay" required>
+                    <label for="bookzadaPay">Bookzadapay</label>
+                </p>
+            </div>
+            <div class="form-content-buttons">
+                <button class="form-button-back">
+                    <a href=index.html>Back</a>
+                </button>
+                    <button class="form-button-proceed">
+                        <a href = "#">Proceed</a>
+                </button>
+                
+            </div>
+        </div>
+
+        <div class="form-summary">
+            <span class="form-summary-label">Order Summary</span>
+            <br>
+            <span>Book name: </span> 
+            <input type="text" value="Uberman" disabled>
+            <br>
+            <br>
+
+            <span>Quantity: </span>
+            <input type="number" value="1" disabled>
+            <br>
+            <br>
+
+            <span>Price: </span>
+            <input type="text" value="$7.95" disabled>
+            <br>
+            <br>
+
+            <span>Shipping Fee: </span>
+            <input type="text" value="$0.55" disabled>
+            <br>
+            <br>
+
+            <input class="form-summary-promo" type="text"  placeholder=" Sample Promo code" disabled>
+            <br>
+            <button class="form-summary-apply">Apply</button>
+            <span class="form-summary-less">-less $1.50</span>
+            <br>
+            <br>
+
+            <span >Total: </span>
+            <input class="form-summary-total" type="text" value="$7.00" disabled>
+        </div>
+    </div> 
+
+    <div class="footer-container">
+        <div class="footer-container1">
+            <div>
+                <span>Follow us on</span>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+            </div>
+        </div>
+        <div class="footer-container2">
+            <span>Need help?</span>
+            <span>You can contact us on</span> 
+            <span>helpcenter@bookzada.com</span>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
