@@ -323,7 +323,6 @@ button:hover {
         padding: 0;
         overflow-x: hidden;
     }
-
   
     .nav-container {
         height: auto;
@@ -340,7 +339,7 @@ button:hover {
     .nav-container-logo {
         height: auto;
         width: 100%;
-        font-size: 25px;
+        font-size: clamp(1.25rem, 0.8594rem + 1.25vw, 1.5625rem);
         padding-top: 5px;
         display: flex;
         justify-content: left;
@@ -365,14 +364,12 @@ button:hover {
         justify-content: space-evenly;
     }
 
-
     .header-container {
         flex-direction: column-reverse;
         height: auto;
         width: 100%;
         margin: 0;
     }
-
 
     .header-content1 {
         width: 100%;
@@ -442,6 +439,9 @@ button:hover {
         width: 100%;
         height: auto;
     }
+    .card-details-description .card-title {
+        font-size: clamp(1.3125rem, 1rem + 1vw, 1.5625rem);
+    }
 
     .card-details-description .fa {
         font-size: 12px;
@@ -461,10 +461,11 @@ button:hover {
     }
 
     .card-button button {
-        width: 90%;
+        width: 95%;
         height: auto;
         border-radius: 20px;
         margin: 5px;
+        font-size: auto;
     }
 
     .footer-container {
@@ -483,7 +484,6 @@ button:hover {
         padding: 5px;
     }
     
-    
     .footer-container2 {
         width: 100%;
         height: auto;
@@ -492,8 +492,14 @@ button:hover {
         flex-direction: column;
         padding: 5px;
     }
+
 }
 
 
 
- 
+
+
+
+
+
+
